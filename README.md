@@ -24,3 +24,6 @@ The Soundcore R50i NC is the only device I support.
 
 ### Tips
 If the ANC Modes button didnt do anything, try pressing the connect button <u>just 1 time</u>, then try switching the ANC Modes again
+
+## Help Needed
+if you have the device, you can help me interpret the bluetooth log. [this repo](https://github.com/CallMeTak/SoundCoreReversing) can be a tutorial to start. just pull some requests 🙂
