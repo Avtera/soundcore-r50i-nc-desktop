@@ -103,17 +103,17 @@ class Soundcore():
         "ANC Outdoor": Set your headphone to ANC Outdoor mode
         "ANC Transport": Set your headphone to ANC Transport mode
         '''
-        base = "08ee00000006810e000"
+        base = "08ee000000068111000"
         if modes == "Transparency":
-            self.send(base+"10101008e")
+            self.send(base+"2550002000000e7") # im still looking for the correct data
         elif modes == "Normal":
-            self.send(base+"20101008f")
+            self.send(base+"2550002000000e7")
         elif modes == "ANC Indoor":
-            self.send(base+"00201008e")
+            self.send(base+"0550002000000e5") # indoor anc are inferior to transport
         elif modes == "ANC Outdoor":
-            self.send(base+"00101008d")
+            self.send(base+"0550002000000e5") # outdoor anc are inferior to transport
         elif modes == "ANC Transport":
-            self.send(base+"00001008c")
+            self.send(base+"0550002000000e5")
 
     def preEQ(self, premadeEQ: str):
         '''
